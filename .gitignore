@@ -1,0 +1,8 @@
+# Word lock files
+~$*.docx
+
+# Generated output
+output/
+
+# Backup files
+SKILL_backup_*.md

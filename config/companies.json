@@ -1,0 +1,39 @@
+{
+  "target_companies": [
+    { "name": "Google", "career_url": "https://careers.google.com/jobs/results/?q=strategy+operations" },
+    { "name": "YouTube", "career_url": "https://careers.google.com/jobs/results/?q=youtube+strategy+operations" },
+    { "name": "Netflix", "career_url": "https://jobs.netflix.com/search?q=strategy%20operations" },
+    { "name": "Stripe", "career_url": "https://stripe.com/jobs/search?q=strategy+operations" },
+    { "name": "Apple", "career_url": "https://jobs.apple.com/en-us/search?search=strategy+operations" },
+    { "name": "OpenAI", "career_url": "https://openai.com/careers#open-roles" },
+    { "name": "Airbnb", "career_url": "https://careers.airbnb.com/positions/?search=strategy+operations", "search_fallback": "Airbnb careers strategy operations site:linkedin.com" },
+    { "name": "Rippling", "career_url": "https://ats.rippling.com/rippling/jobs", "search_query": "site:ats.rippling.com/rippling strategy operations" },
+    { "name": "Databricks", "career_url": "https://www.databricks.com/company/careers/open-positions?department=G%26A" },
+    { "name": "Snowflake", "career_url": "https://careers.snowflake.com/us/en/search-results?keywords=strategy+operations" },
+    { "name": "Figma", "career_url": "https://www.figma.com/careers/#job-openings" },
+    { "name": "Notion", "career_url": "https://www.notion.so/careers#open-roles" },
+    { "name": "Ramp", "career_url": "https://ramp.com/careers#open-positions" },
+    { "name": "Whatnot", "career_url": "https://www.whatnot.com/careers#open-roles" },
+    { "name": "Harvey", "career_url": "https://jobs.ashbyhq.com/harvey", "search_query": "site:jobs.ashbyhq.com/harvey strategy operations" },
+    { "name": "TikTok", "career_url": "https://careers.tiktok.com/position?keywords=strategy+operations" },
+    { "name": "Adobe", "career_url": "https://careers.adobe.com/us/en/search-results?keywords=strategy+operations" }
+  ],
+  "indeed_search_terms": [
+    "Product Strategy Manager",
+    "Strategy and Operations Manager",
+    "Business Strategy Manager",
+    "Product Operations Manager",
+    "Strategic Insights Manager",
+    "Head of Strategy",
+    "Business Operations Manager"
+  ],
+  "title_keywords_include": [
+    "strategy", "operations", "ops", "planning", "insights", "business strategy",
+    "product strategy", "product operations", "gtm strategy", "strategic"
+  ],
+  "title_keywords_exclude": [
+    "engineer", "software", "design", "designer", "recruiter", "recruiting",
+    "sales", "account executive", "data scientist", "machine learning", "devops",
+    "security", "legal", "finance", "accounting", "marketing", "growth marketing"
+  ]
+}
