@@ -11,7 +11,7 @@ Generates a tailored, one-page resume for a specific job by pulling real accompl
 |------|-------|
 | Skill root (Windows) | `C:\Users\aatum\GitHub\job-application-skill\` |
 | Resume template | `resume_template.docx` — never modify directly |
-| Generated resumes | `output/resumes/` |
+| Generated resumes | `Resumes/` |
 | Unpack script | `python /path/to/skills/docx/scripts/office/unpack.py` |
 | Pack script | `python /path/to/skills/docx/scripts/office/pack.py` |
 | Validate script | `python /path/to/skills/docx/scripts/office/validate.py` |
@@ -40,7 +40,7 @@ Follow all Bullet Rules in Hard Rules. Draft bullets before opening the template
 
 ### Step 5 — Edit the Resume
 
-1. Copy `resume_template.docx` → `output/resumes/[Company] - [Job Title] - [YYYY-MM-DD].docx`
+1. Copy `resume_template.docx` → `Resumes/[Company] - [Job Title] - [YYYY-MM-DD].docx`
 2. Unpack: `python unpack.py [copied_file] unpacked_resume/`
 3. Edit `unpacked_resume/word/document.xml`:
    - **Summary** — rewrite following Summary Rules in Hard Rules
