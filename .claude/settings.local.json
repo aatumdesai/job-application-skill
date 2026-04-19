@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(cp:*)",
+      "mcp__claude_ai_Airtable__list_tables_for_base",
+      "mcp__claude_ai_Airtable__list_records_for_table",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where py:*)",
+      "Bash(ls /c/Python*)",
+      "Bash(py --version)",
+      "Bash(/c/Users/aatum/AppData/Local/Microsoft/WindowsApps/python.exe --version)",
+      "Bash(find /c/Users/aatum -name python*.exe)",
+      "Bash(winget install:*)",
+      "Bash(PYTHON=/c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe)",
+      "Bash($PYTHON --version)",
+      "Bash($PYTHON -m pip install defusedxml)",
+      "Bash($PYTHON -c \"import defusedxml; print\\(''defusedxml ok''\\)\")",
+      "Bash($PYTHON scripts/unpack.py \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27.docx\" unpacked_resume/)",
+      "Bash($PYTHON scripts/pack.py unpacked_resume/ \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27.docx\" --original resume_template.docx)",
+      "Bash($PYTHON -m pip install lxml)",
+      "Bash(PYTHONIOENCODING=utf-8 PYTHONPATH=/c/dev/Github/job-application-skill/scripts /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/pack.py unpacked_resume/ \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27.docx\" --original resume_template.docx 2>&1)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/validate.py \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27.docx\" 2>&1)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/unpack.py resume_template.docx unpacked_template/ 2>&1)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/pack.py unpacked_resume/ \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27.docx\" --original resume_template.docx 2>&1)",
+      "Bash(rm:*)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/unpack.py \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27 - ATS.docx\" unpacked_ats/)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/pack.py unpacked_ats/ \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27 - ATS.docx\" --original resume_template.docx 2>&1)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/pack.py unpacked_ats/ \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27 - ATS.docx\" --validate false)",
+      "Bash(sed -n '620,660p' C:/dev/Github/job-application-skill/unpacked_ats/word/document.xml)",
+      "Bash(sed -n '1375,1450p' C:/dev/Github/job-application-skill/unpacked_ats/word/document.xml)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/aatum/AppData/Local/Programs/Python/Python312/python.exe scripts/unpack.py \"Resumes/OpenAI - Strategy and Insight Lead - 2026-03-27 - ATS.docx\" unpacked_ats_review/)"
+    ]
+  }
+}

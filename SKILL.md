@@ -12,9 +12,9 @@ Generates a tailored, one-page resume for a specific job by pulling real accompl
 | Skill root (Windows) | `C:\Users\aatum\GitHub\job-application-skill\` |
 | Resume template | `resume_template.docx` — never modify directly |
 | Generated resumes | `Resumes/` |
-| Unpack script | `python /path/to/skills/docx/scripts/office/unpack.py` |
-| Pack script | `python /path/to/skills/docx/scripts/office/pack.py` |
-| Validate script | `python /path/to/skills/docx/scripts/office/validate.py` |
+| Unpack script | `python scripts/unpack.py` |
+| Pack script | `python scripts/pack.py` |
+| Validate script | `python scripts/validate.py` |
 | Airtable base ID | `appFHhhJ6VkwkdpPQ` |
 | Work Logs table | `tblH7q7PgoGbBukXN` (READ-ONLY) |
 
@@ -41,16 +41,23 @@ Follow all Bullet Rules in Hard Rules. Draft bullets before opening the template
 ### Step 5 — Edit the Resume
 
 1. Copy `resume_template.docx` → `Resumes/[Company] - [Job Title] - [YYYY-MM-DD].docx`
-2. Unpack: `python unpack.py [copied_file] unpacked_resume/`
+2. Unpack: `python scripts/unpack.py [copied_file] unpacked_resume/`
 3. Edit `unpacked_resume/word/document.xml`:
    - **Summary** — rewrite following Summary Rules in Hard Rules
    - **Bullets** — replace bullet text in each section; follow Section Rules and Bullet Rules in Hard Rules
    - **Skills** — reorder to front-load what's most relevant; follow Skills Rules in Hard Rules
-4. Repack: `python pack.py unpacked_resume/ output/resumes/[filename].docx --original resume_template.docx`
-5. Validate: `python validate.py output/resumes/[filename].docx` — confirm paragraph count is unchanged
+4. Repack: `python scripts/pack.py unpacked_resume/ Resumes/[filename].docx --original resume_template.docx`
+5. Validate: `python scripts/validate.py Resumes/[filename].docx` — confirm paragraph count is unchanged
 
-### Step 6 — Deliver
-Share the file with the user via a `computer://` link. Show the bullets written so the user can review before sending.
+### Step 6 — Create the ATS Highlighted Doc
+Copy the final resume to `Resumes/[Company] - [Job Title] - [YYYY-MM-DD] - ATS.docx`. Unpack it and add Word highlights directly to the XML by splitting runs:
+- **Yellow highlight** (`<w:highlight w:val="yellow"/>`) — direct ATS keyword match (exact or near-exact term from the JD)
+- **Green highlight** (`<w:highlight w:val="green"/>`) — thematic match (maps to a JD theme but not a direct keyword; typically quantified outcomes or skill demonstrations)
+
+Apply highlights to: Summary phrases, bullet fragments, and Skills line entries. To highlight a phrase, split its parent `<w:r>` into multiple runs — pre-text (no highlight), highlighted text, post-text (no highlight). Use `xml:space="preserve"` on any run with leading or trailing spaces. Keep all other `<w:rPr>` attributes (fonts, size, iCs) identical to the original run.
+
+### Step 7 — Deliver
+Show the bullets written so the user can review before sending.
 
 ---
 
@@ -63,10 +70,10 @@ Share the file with the user via a `computer://` link. Show the bullets written 
 
 ### Summary Rules
 1. Always open with: "UCLA Anderson MBA and Business Strategy & Insights Manager at Productboard," then state the core of what he does — one sentence a recruiter can use to make a go/no-go decision. If the role is a startup, put "(Series D B2B SaaS)" right after Productboard in the first sentence.
-2. Remaining sentences bridge to the specific JD — connect real experience to what the role is explicitly asking for; do not repeat information contained in sentence 1
-3. Never exceed 3 physical lines on the page — rendered at 10pt Times New Roman. Target ~300 characters total. Trim aggressively
+2. Remaining sentences must be overarching — describe what Aatum brings in general terms that map to JD themes. Do NOT cite specific projects, metrics, tools, or bullet-level results in the summary. "Building GTM analytics capabilities and operating cadences" is correct. "From AI opportunity studies to $1M revenue capture workflows" is wrong.
+3. Never exceed 3 physical lines on the page — rendered at 10pt Times New Roman. Hard cap: 275 characters. Count before writing. Trim aggressively.
 4. No vague jargon — nothing like "passionate about," "leverages," "dynamic," "results-driven"
-5. Never misrepresent his title — actual title is Business Strategy & Insights Manager at Productboard. Do not invent a different title. If the target role is similar you can replace "Business Strategy & Insights Manager" with something but do not use title case. For example, you can replace with "strategy and operations professional" but do not invent experience I do not have. 
+5. Never misrepresent his title — actual title is Business Strategy & Insights Manager at Productboard. Do not invent a different title. If the target role is similar you can replace "Business Strategy & Insights Manager" with something but do not use title case. For example, you can replace with "strategy and operations professional" but do not invent experience I do not have.
 6. Match existing run formatting exactly: 20pt Times New Roman, italic via iCs tag
 
 ### Bullet Rules
@@ -79,6 +86,10 @@ Share the file with the user via a `computer://` link. Show the bullets written 
 
 **Content:**
 - No articles: no "a," "an," or "the"
+- Write for a recruiter audience, not a technical one — methodology details (chart types, framework names, visualization approaches) should only appear if they are recognizable signals to a non-technical hiring manager. Lead with business impact.
+- Do not mix the project description with the result — if the result is what reached 3,000 customers, do not write "study across 3,000 customers." Describe what was done, then what it drove.
+- Distinguish between work that used AI and work that was about AI — these are different and must not be conflated in bullet or summary copy.
+- Never use unexpanded acronyms or abbreviations — every bullet must be standalone-readable by a generalist recruiter. "HCP" → "healthcare provider", "rep" → "sales representative". Exception: universally known terms (AI, MBA, B2B, SaaS) are fine.
 - Quantify wherever possible — numbers, percentages, dollar values, timeframes, scale
 - Aim for 1–2 bullets that naturally surface cross-functional collaboration or team leadership where the data supports it — don't force it into every bullet
 - Signal 0-to-1 work explicitly — use "built from scratch," "designed and launched," or "stood up"

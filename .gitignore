@@ -4,5 +4,21 @@
 # Generated output
 output/
 
+# Temporary unpack directories
+unpacked_resume/
+unpacked_ats/
+
+# Temp build files
+build_out.txt
+build_err.txt
+build_ats.py
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
 # Backup files
 SKILL_backup_*.md
