@@ -12,6 +12,7 @@ Generates tailored, one-page resumes and ATS documents from Airtable work logs. 
 
 | Path | Purpose |
 |------|---------|
+| `.claude/commands/setup.md` | `/setup` slash command — first-time setup for new users |
 | `.claude/commands/resume-optimizer.md` | `/resume-optimizer` slash command — start here |
 | `references/user_config.md` | Identity, section names, bullet caps, paragraph count, Airtable fields — update when role/employer changes |
 | `references/template-strings.md` | Exact find/replace strings for document.xml substitution |
