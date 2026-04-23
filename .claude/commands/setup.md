@@ -114,7 +114,12 @@ Also ask for bullet caps per section if not obvious from context (e.g. if all se
 
 ## Step 6: Ask for section bullet caps
 
-For each section identified, ask the user to confirm the maximum number of bullets allowed. Suggest the count found in the template as the default, and note if any roles should have special conditions (e.g. "up to X for [role type] roles").
+For each section, ask two questions:
+
+1. **Default cap** — "How many bullets maximum for [section]? (Your template has [N] — is that the cap, or is there no limit?)"
+2. **Role-type exception** — "Does that cap ever go higher for certain types of roles? For example, if this is a finance role, do you show more bullets from [section]?"
+
+Record both the default cap and any exceptions (e.g. "max 4, up to 6 for real estate or legal roles"). If the user says no exceptions, record just the default. If the user says no cap, record as unlimited.
 
 ---
 
