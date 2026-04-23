@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes">
-  <Template>Normal.dotm</Template>
+  <Template>Normal</Template>
   <TotalTime>2929</TotalTime>
   <Pages>1</Pages>
-  <Words>454</Words>
-  <Characters>3022</Characters>
+  <Words>558</Words>
+  <Characters>3186</Characters>
   <Application>Microsoft Office Word</Application>
   <DocSecurity>0</DocSecurity>
-  <Lines>25</Lines>
-  <Paragraphs>6</Paragraphs>
+  <Lines>26</Lines>
+  <Paragraphs>7</Paragraphs>
   <ScaleCrop>false</ScaleCrop>
   <HeadingPairs>
     <vt:vector size="2" baseType="variant">
@@ -27,7 +27,7 @@
   </TitlesOfParts>
   <Company>UCLA Anderson</Company>
   <LinksUpToDate>false</LinksUpToDate>
-  <CharactersWithSpaces>3470</CharactersWithSpaces>
+  <CharactersWithSpaces>3737</CharactersWithSpaces>
   <SharedDoc>false</SharedDoc>
   <HLinks>
     <vt:vector size="6" baseType="variant">

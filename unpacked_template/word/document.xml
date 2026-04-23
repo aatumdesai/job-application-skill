@@ -48,13 +48,13 @@
         </w:rPr>
         <w:t xml:space="preserve">(714) 350-8481 | aatum.desai@outlook.com | </w:t>
       </w:r>
-      <w:hyperlink r:id="rId12" w:history="1">
+      <w:hyperlink r:id="rId10" w:history="1">
         <w:r>
           <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:color w:val="0563C1"/>
             <w:sz w:val="21"/>
             <w:szCs w:val="21"/>
-            <w:color w:val="0563C1"/>
             <w:u w:val="single"/>
           </w:rPr>
           <w:t>aatumdesai.com</w:t>
@@ -68,13 +68,13 @@
         </w:rPr>
         <w:t xml:space="preserve"> | </w:t>
       </w:r>
-      <w:hyperlink r:id="rId13" w:history="1">
+      <w:hyperlink r:id="rId11" w:history="1">
         <w:r>
           <w:rPr>
             <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+            <w:color w:val="0563C1"/>
             <w:sz w:val="21"/>
             <w:szCs w:val="21"/>
-            <w:color w:val="0563C1"/>
             <w:u w:val="single"/>
           </w:rPr>
           <w:t>linkedin.com/in/aatumdesai</w:t>
@@ -248,7 +248,7 @@
         <w:t>September 2025 – Present</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="3FEA2F51" w14:textId="0DCF21C0" w:rsidR="00DB74B6" w:rsidRDefault="000655EF" w:rsidP="000F20F7">
+    <w:p w14:paraId="57842213" w14:textId="77777777" w:rsidR="00142DB3" w:rsidRPr="00142DB3" w:rsidRDefault="00142DB3" w:rsidP="00142DB3">
       <w:pPr>
         <w:numPr>
           <w:ilvl w:val="0"/>
@@ -257,7 +257,6 @@
         <w:tabs>
           <w:tab w:val="right" w:pos="10800"/>
         </w:tabs>
-        <w:spacing w:before="80"/>
         <w:rPr>
           <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
           <w:sz w:val="20"/>
@@ -268,10 +267,36 @@
           <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
           <w:sz w:val="20"/>
         </w:rPr>
-        <w:t>Led tradeoff-based prioritization study (MaxDiff) across 65 AI use cases for product managers, informing AI roadmap focus and GTM positioning around highest-impact adoption drivers</w:t>
+        <w:t>Directed roadmap prioritization across 60 AI use cases using market research (MaxDiff survey) to identify customer preferences; guided allocation of engineering capacity and GTM investment toward highest-impact adoption drivers</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="031C07E0" w14:textId="77777777" w:rsidR="00142DB3" w:rsidRPr="00142DB3" w:rsidRDefault="00142DB3" w:rsidP="00142DB3">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="39"/>
+        </w:numPr>
+        <w:tabs>
+          <w:tab w:val="right" w:pos="10800"/>
+        </w:tabs>
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>Built customer segmentation model to prioritize expansion accounts for identified seat-overage opportunity, increasing efficiency of revenue capture and converting excess usage into incremental $1M contracted ARR</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="07AFD7E6" w14:textId="2B87ACDD" w:rsidR="00E25248" w:rsidRDefault="000018FB" w:rsidP="00994CD2">
+    <w:p w14:paraId="6566CF19" w14:textId="77777777" w:rsidR="00142DB3" w:rsidRPr="00142DB3" w:rsidRDefault="00142DB3" w:rsidP="00142DB3">
       <w:pPr>
         <w:numPr>
           <w:ilvl w:val="0"/>
@@ -290,10 +315,10 @@
           <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
           <w:sz w:val="20"/>
         </w:rPr>
-        <w:t>Designed and drove a revenue capture strategy for customers exceeding contracted seat limits, converting product usage analytics into actionable expansion motions for Sales</w:t>
+        <w:t>Redesigned churn risk framework by integrating AI-derived customer call transcript sentiment with product health metrics, improving accuracy of high-risk account ranking by 22%, enabling targeted retention strategies</w:t>
       </w:r>
     </w:p>
-    <w:p w14:paraId="06FF572A" w14:textId="10775A10" w:rsidR="00DD6D73" w:rsidRDefault="00DD6D73" w:rsidP="00994CD2">
+    <w:p w14:paraId="6DC9B030" w14:textId="30605E60" w:rsidR="00E25248" w:rsidRPr="00142DB3" w:rsidRDefault="00142DB3" w:rsidP="00142DB3">
       <w:pPr>
         <w:numPr>
           <w:ilvl w:val="0"/>
@@ -312,29 +337,7 @@
           <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
           <w:sz w:val="20"/>
         </w:rPr>
-        <w:t>Identified account fragmentation between self-serve and enterprise customers and designed consolidation motion, improving account-level adoption within existing enterprise contracts</w:t>
-      </w:r>
-    </w:p>
-    <w:p w14:paraId="6DC9B030" w14:textId="428A4524" w:rsidR="00E25248" w:rsidRDefault="00E25248" w:rsidP="00994CD2">
-      <w:pPr>
-        <w:numPr>
-          <w:ilvl w:val="0"/>
-          <w:numId w:val="39"/>
-        </w:numPr>
-        <w:tabs>
-          <w:tab w:val="right" w:pos="10800"/>
-        </w:tabs>
-        <w:rPr>
-          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
-          <w:sz w:val="20"/>
-        </w:rPr>
-      </w:pPr>
-      <w:r>
-        <w:rPr>
-          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
-          <w:sz w:val="20"/>
-        </w:rPr>
-        <w:t>Act as internal strategy consultant across Product, Marketing, Sales, and Finance, aligning stakeholders to execute high-priority initiatives and establish scalable operating frameworks</w:t>
+        <w:t>Established performance management framework for new product launch by defining success metrics and building cross-functional reporting infrastructure, aligning Product, Sales, and Marketing around revenue and adoption targets</w:t>
       </w:r>
     </w:p>
     <w:p w14:paraId="14F78999" w14:textId="4F79D068" w:rsidR="006A0254" w:rsidRPr="00B617B0" w:rsidRDefault="006A0254" w:rsidP="00F0774E">
@@ -751,8 +754,8 @@
           <w:sz w:val="20"/>
         </w:rPr>
         <w:t>Master of Business Administration, Marketing Analytics and Finance Specializations</w:t>
-        <w:tab/>
-      </w:r>
+      <w:tab/></w:r>
+      
       <w:r>
         <w:rPr>
           <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
@@ -913,8 +916,8 @@
           <w:sz w:val="20"/>
         </w:rPr>
         <w:t>: Advised client on acquisition of online car auction platform, developed GTM strategy rooted in customer research</w:t>
-        <w:tab/>
-      </w:r>
+      <w:tab/></w:r>
+      
     </w:p>
     <w:p w14:paraId="4D4D3E0E" w14:textId="77777777" w:rsidR="00D90807" w:rsidRPr="00B617B0" w:rsidRDefault="00D90807" w:rsidP="002C0543">
       <w:pPr>

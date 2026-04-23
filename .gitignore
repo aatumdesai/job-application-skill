@@ -22,3 +22,7 @@ __pycache__/
 
 # Backup files
 SKILL_backup_*.md
+
+# Temp build artifacts
+ats_config.json
+unpacked_template_check/
