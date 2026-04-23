@@ -5,6 +5,7 @@ Generates a tailored one-page resume and ATS document for a specific job applica
 ## Setup
 
 Before starting, read:
+- `references/user_config.md` — identity, section names, bullet caps, paragraph count, Airtable field names
 - `references/template-strings.md` — exact find/replace strings for document.xml substitution
 - `references/ats-reference.md` — ATS highlight colors, page 2 XML structure, config JSON schema
 
@@ -80,12 +81,12 @@ List both output file paths:
 
 ## Summary Rules
 
-- Always open with: `"UCLA Anderson MBA and Business Strategy & Insights Manager at Productboard,"` — add `"(Series D B2B SaaS)"` after Productboard for startup roles
+- Always open with the **Summary Opener** from `references/user_config.md` — use the startup variant (with company stage in parentheses) for startup roles
 - Remaining sentences are **directly shaped by the Experience Themes from Step 2** — each sentence should address one or more themes, describing what is brought to the role in general terms; no specific projects, metrics, tools, or bullet-level results in the summary
-- Hard cap: 275 characters total (3 physical lines at 10pt Times New Roman) — verify with `echo -n "your summary text" | wc -c` before finalizing; rewrite to fit rather than cutting words arbitrarily
+- Hard cap and character verification method are in `references/user_config.md` — verify before finalizing; rewrite to fit rather than cutting words arbitrarily
 - The summary is the best place to make the case that you are the obvious choice for this role — use it to address the Experience Themes directly and weave in JD Keywords naturally where they fit
 - No vague jargon: no "passionate about," "leverages," "dynamic," "results-driven"
-- Actual title is **Business Strategy & Insights Manager** — never invent a different title in title case; lowercase substitutions (e.g., "strategy and operations professional") are allowed
+- Use the **Current title** from `references/user_config.md` — never invent a different title in title case; lowercase substitutions (e.g., "strategy and operations professional") are allowed
 
 ---
 
@@ -114,10 +115,7 @@ List both output file paths:
 
 ## Section Rules
 
-- Place bullets under the role where the work happened: Productboard → PRODUCTBOARD, Abbott → ABBOTT, PINN → PINN INVESTMENTS
-- **Productboard:** no hard cap
-- **PINN:** max 4 bullets (up to 6 for real estate or legal roles)
-- **Abbott:** max 1 bullet unless the role is healthcare-related and a second bullet adds clear value (max 2)
+- Place bullets under the role where the work happened — section names, display labels, bullet caps, and special conditions are all in `references/user_config.md`
 - Use `<w:numId w:val="39"/>` for all bullet paragraphs — match existing XML structure
 
 ---
