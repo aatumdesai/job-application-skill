@@ -20,6 +20,9 @@ build_ats.py
 __pycache__/
 *.pyc
 
+# macOS
+.DS_Store
+
 # Backup files
 SKILL_backup_*.md
 
